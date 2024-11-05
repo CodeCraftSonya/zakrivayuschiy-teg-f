@@ -2,11 +2,12 @@
 :root {
   --main-font: "Inter-Variable";
   --accent-font: "PressStart2P-Regular";
-  --card-title-weight: 400;
-  --card-weight: 700;
+  --card-title-weight: 700;
+  --card-weight: 400;
   --bg-color: #f5f5f5;
   --accent-color: #000;
   --background-primary: #e7e7e7;
   --background-secondary: #1a1a1a;
   --stripe-color-light: #d3d3d3;
+  --inline-size: clamp(23.438rem, 16.2859rem + 30.5157vw, 43.75rem);
 }
