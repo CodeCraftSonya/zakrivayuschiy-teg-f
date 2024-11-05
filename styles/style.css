@@ -20,6 +20,31 @@
   font-family: var(--main-font), sans-serif;
   background-color: var(--bg-color);
   color: var(--accent-color);
+  background-image:
+    /* Horizontal stripes */
+    repeating-linear-gradient(
+      to right,
+      var(--stripe-color),
+      var(--stripe-color) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    /* Vertical stripes */
+      repeating-linear-gradient(
+        to bottom,
+        var(--stripe-color),
+        var(--stripe-color) 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+    /* Color density gradient */
+      linear-gradient(
+        to bottom,
+        var(--background-primary) 0.01%,
+        var(--background-secondary) 100%
+      );
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @supports (font-variation-settings: normal) {

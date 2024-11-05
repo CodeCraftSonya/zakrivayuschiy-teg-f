@@ -7,6 +7,11 @@
 :root.theme-light {
   --bg-color: #f5f5f5;
   --accent-color: #000;
+  --card-title-weight: 400;
+  --card-weight: 700;
+  --background-primary: #e7e7e7;
+  --background-secondary: #1a1a1a;
+  --stripe-color-light: #d3d3d3;
 }
 
 :root.theme-dark {
@@ -14,6 +19,9 @@
   --accent-color: #00cc14;
   --card-title-weight: 465;
   --card-weight: 785;
+  --background-primary: #007f0c;
+  --background-secondary: #004306;
+  --stripe-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +30,8 @@
     --accent-color: #00cc14;
     --card-title-weight: 465;
     --card-weight: 785;
+    --background-primary: #007f0c;
+    --background-secondary: #004306;
+    --stripe-color: #000;
   }
 }
