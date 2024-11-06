@@ -12,6 +12,7 @@
   --background-primary: #e7e7e7;
   --background-secondary: #1a1a1a;
   --stripe-color-light: #d3d3d3;
+  --label-border-color: #fff;
 }
 
 :root.theme-dark {
@@ -22,6 +23,7 @@
   --background-primary: #007f0c;
   --background-secondary: #004306;
   --stripe-color: #000;
+  --label-border-color: #000;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,5 +35,6 @@
     --background-primary: #007f0c;
     --background-secondary: #004306;
     --stripe-color: #000;
+    --label-border-color: #000;
   }
 }

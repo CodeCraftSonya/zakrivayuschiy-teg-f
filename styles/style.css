@@ -19,7 +19,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font), sans-serif;
@@ -143,6 +142,37 @@
 
 .card__content-paragraph {
   line-height: 117%;
+}
+
+.card__image-wrapper {
+  position: relative;
+}
+
+.card__label {
+  position: absolute;
+  color: var(--accent-color);
+  opacity: 0.5;
+  inset-block-start: 25px;
+  inset-inline-end: clamp(0.813rem, 0.5489rem + 1.1268vw, 1.563rem);
+  mix-blend-mode: hard-light;
+  font-family: var(--accent-font), sans-serif;
+  font-size: 0.875rem;
+  text-shadow:
+    -1px 0 var(--label-border-color),
+    0 1px var(--label-border-color),
+    1px 0 var(--label-border-color),
+    0 -1px var(--label-border-color);
+}
+
+@supports (
+  (text-stroke: 1px var(--label-border-color)) or
+    (-webkit-text-stroke: 1px var(--label-border-color))
+) {
+  .card__label {
+    -webkit-text-stroke: 1px var(--label-border-color);
+    text-stroke: 1px var(--label-border-color);
+    text-shadow: none;
+  }
 }
 
 .card__image {
