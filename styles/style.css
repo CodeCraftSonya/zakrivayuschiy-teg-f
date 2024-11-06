@@ -114,20 +114,73 @@
   gap: 0.825rem;
 }
 .theme-menu__item {
-  position: relative;
   font-size: 0.875rem;
   padding-inline-start: 1rem;
 }
 
 .theme-menu__button {
+  position: relative;
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
+  cursor: pointer;
 }
+
+.theme-menu__button:hover,
+.theme-menu__button:disabled,
+.theme-menu__button:focus-visible {
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+}
+
 .theme-menu__button:disabled::before {
   content: "▶";
   position: absolute;
-  inset-inline-end: calc(100% - 0.7rem);
+  inset-inline-end: calc(100% + 10px);
+  animation-name: arrow-movement;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow-movement {
+  from {
+    inset-inline-end: calc(100% + 10px);
+  }
+  to {
+    inset-inline-end: calc(100% + 10px + 4px);
+  }
+}
+
+.theme-menu__button:focus-visible {
+  pointer-events: none;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  bottom: -0.125rem;
+  left: 0;
+  height: 2px; /* Толщина полосы */
+  background-color: currentColor; /* Цвет полосы */
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
 }
 
 .card__heading {
