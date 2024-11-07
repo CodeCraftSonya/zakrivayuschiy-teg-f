@@ -13,6 +13,7 @@
   --background-secondary: #1a1a1a;
   --stripe-color-light: #d3d3d3;
   --label-border-color: #fff;
+  --heart-contour-color: #000;
 }
 
 :root.theme-dark {
@@ -24,6 +25,7 @@
   --background-secondary: #004306;
   --stripe-color: #000;
   --label-border-color: #000;
+  --heart-contour-color: #00cc14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -36,5 +38,6 @@
     --background-secondary: #004306;
     --stripe-color: #000;
     --label-border-color: #000;
+    --heart-contour-color: #00cc14;
   }
 }
