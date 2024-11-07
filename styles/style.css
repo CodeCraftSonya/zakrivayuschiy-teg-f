@@ -312,5 +312,23 @@
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
+.card__icon-button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
+.sparks {
+  opacity: 0;
+}
+
 @media (width <= 375px) {
 }
