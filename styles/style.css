@@ -24,29 +24,25 @@
   font-family: var(--main-font), sans-serif;
   background-color: var(--bg-color);
   color: var(--accent-color);
-  background-image:
-    /* Horizontal stripes */
-    repeating-linear-gradient(
+  background-image: repeating-linear-gradient(
       to right,
       var(--stripe-color),
       var(--stripe-color) 2px,
       transparent 2px,
       transparent 4px
     ),
-    /* Vertical stripes */
-      repeating-linear-gradient(
-        to bottom,
-        var(--stripe-color),
-        var(--stripe-color) 2px,
-        transparent 2px,
-        transparent 4px
-      ),
-    /* Color density gradient */
-      linear-gradient(
-        to bottom,
-        var(--background-primary) 0.01%,
-        var(--background-secondary) 100%
-      );
+    repeating-linear-gradient(
+      to bottom,
+      var(--stripe-color),
+      var(--stripe-color) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      var(--background-primary) 0.01%,
+      var(--background-secondary) 100%
+    );
   background-size: cover;
   background-attachment: fixed;
 }
@@ -175,8 +171,8 @@
   position: absolute;
   bottom: -0.125rem;
   left: 0;
-  height: 2px; /* Толщина полосы */
-  background-color: currentColor; /* Цвет полосы */
+  height: 2px;
+  background-color: currentColor;
   width: 100%;
   transform: scaleX(0);
   transform-origin: left;
@@ -248,7 +244,6 @@
   border: 2px solid var(--accent-color);
   inline-size: 130px;
   block-size: 38px;
-  margin-inline-start: 0.875rem;
   background-color: transparent;
   color: var(--main-button-text-color);
 }
@@ -421,9 +416,11 @@
 }
 
 .dialog {
-  height: calc(24.251rem - clamp(12.063rem, 12.019rem + 0.1878vw, 12.188rem));
+  /*height: calc(24.251rem - clamp(12.063rem, 12.019rem + 0.1878vw, 12.188rem));*/
   width: clamp(21.313rem, 20.9609rem + 1.5023vw, 22.313rem);
   position: fixed;
+  inset: 50% auto auto 50%;
+  transform: translate(-50%, -50%);
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
   color: var(--accent-color);
@@ -438,7 +435,7 @@
   align-self: center;
 }
 
-.dialog[open] {
+dialog[popover]:popover-open {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -462,5 +459,10 @@
   text-transform: uppercase;
   width: 100%;
 }
+
+#myPopover::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 @media (width <= 375px) {
 }

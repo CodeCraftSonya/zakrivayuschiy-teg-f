@@ -87,15 +87,15 @@
             </article>
         </li>
       </ul>
-      <button class="save-button">
+      <button class="save-button" popovertarget="myPopover" popovertargetaction="show">
           <svg class="svg__floppy" preserveAspectRatio="xMidYMid meet">
             <use href="./svg/floppy.svg/#apple-1"></use>
           </svg>
-        <span class="button__text">Сохранить на память</span>
+        <span class="button__text" >Сохранить на память</span>
       </button>
 
     </main>
-    <dialog class="dialog" open>
+    <dialog class="dialog" id="myPopover" popover>
         <div class="dialog__wrapper">
           <svg class="svg__floppy" preserveAspectRatio="xMidYMid meet">
             <use href="./svg/floppy.svg/#apple-1"></use>
@@ -104,8 +104,9 @@
             дискету, чтобы продолжить</p>
         </div>
 
-        <button class="dialog-button">
-          <span class="button__text">ok</span>
+        <button class="dialog-button" id="closeButton" popovertarget="myPopover" popovertargetaction="hide">
+          <span class="button__text" aria-hidden="true">ok</span>
+          <span class="visually-hidden">Закрыть</span>
         </button>
     </dialog>
     <script src="./scripts/like.js"></script>
