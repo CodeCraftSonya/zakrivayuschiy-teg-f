@@ -58,10 +58,10 @@
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  margin-block: 100px;
-  padding: 25px;
   inline-size: var(--inline-size);
   block-size: clamp(20.438rem, 14.6057rem + 13.9904vw, 23rem);
+  margin-block: 100px;
+  padding: 25px;
   background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
   font-family: var(--accent-font), sans-serif;
@@ -91,8 +91,8 @@
 }
 
 .theme-menu__button {
-  color: currentColor;
   position: relative;
+  color: currentColor;
   text-transform: uppercase;
   background-color: transparent;
   border: 0;
@@ -142,7 +142,7 @@
 .theme-menu__button::after {
   content: "";
   position: absolute;
-  bottom: -0.125rem;
+  top: 100%;
   left: 0;
   height: 2px;
   background-color: currentColor;
@@ -181,9 +181,9 @@
 }
 
 .card__heading {
-  font-size: 1.125rem;
   padding-inline: 0.625rem;
   padding-block: 3px;
+  font-size: 1.125rem;
   border-block-end: 2px solid var(--accent-color);
   line-height: clamp(1.375rem, 1.3088rem + 0.2824vw, 1.563rem);
 }
@@ -197,10 +197,10 @@
 }
 
 .card__content-text {
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 27px;
+  width: 100%;
   padding-block-end: 25px;
 }
 
@@ -210,7 +210,17 @@
 
 .card__image {
   width: 100%;
+  aspect-ratio: 1 / 1;
   display: block;
+  object-fit: cover;
+}
+
+.cut-inline-start {
+  object-position: 0 0;
+}
+
+.cut-inline-end {
+  object-position: right;
 }
 
 .card__label {
@@ -242,9 +252,9 @@
 
 .card__like-button,
 .dialog-button {
-  border: 2px solid var(--accent-color);
   inline-size: 130px;
   block-size: 38px;
+  border: 2px solid var(--accent-color);
   background-color: transparent;
   color: var(--main-button-text-color);
 }
