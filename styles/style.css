@@ -67,40 +67,12 @@
   font-family: var(--accent-font), sans-serif;
   font-size: clamp(0.875rem, 0.6875rem + 0.8333vw, 1.4375rem);
 }
-.main {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 50px;
-  inline-size: var(--inline-size);
-  font-size: 1.125rem;
-  margin-bottom: clamp(6.25rem, 6.1838rem + 0.2824vw, 6.438rem);
-}
 
-.card {
-  border: 2px solid var(--accent-color);
-}
-
-.card__heading {
-  font-size: 1.125rem;
-}
-
-.card__content {
-  flex-wrap: wrap;
-  padding: 25px;
-}
-
-.card__content-text {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
-  padding-block-end: 25px;
-}
 .header__logo {
   font-size: clamp(3.0625rem, 2.7292rem + 1.4815vw, 4.0625rem);
   margin-block-end: 20px;
 }
+
 .header__title {
   font-size: clamp(0.875rem, 0.6875rem + 0.8333vw, 1.4375rem);
   margin-block-end: 25px;
@@ -112,6 +84,7 @@
   flex-direction: column;
   gap: 0.825rem;
 }
+
 .theme-menu__item {
   font-size: 0.875rem;
   padding-inline-start: 1rem;
@@ -183,6 +156,16 @@
   transform: scaleX(1);
 }
 
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  inline-size: var(--inline-size);
+  font-size: 1.125rem;
+  margin-bottom: clamp(6.25rem, 6.1838rem + 0.2824vw, 6.438rem);
+}
+
 .main__card-list {
   display: flex;
   flex-direction: column;
@@ -192,7 +175,13 @@
 .main__card-list-item {
   background-color: var(--bg-color);
 }
+
+.card {
+  border: 2px solid var(--accent-color);
+}
+
 .card__heading {
+  font-size: 1.125rem;
   padding-inline: 0.625rem;
   padding-block: 3px;
   border-block-end: 2px solid var(--accent-color);
@@ -203,10 +192,25 @@
   display: flex;
   justify-content: end;
   border-block-start: 2px solid var(--accent-color);
+  flex-wrap: wrap;
+  padding: 25px;
+}
+
+.card__content-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding-block-end: 25px;
 }
 
 .card__image-wrapper {
   position: relative;
+}
+
+.card__image {
+  width: 100%;
+  display: block;
 }
 
 .card__label {
@@ -236,12 +240,6 @@
   }
 }
 
-.card__image {
-  width: 100%;
-  aspect-ratio: 1/1;
-  display: block;
-}
-
 .card__like-button,
 .dialog-button {
   border: 2px solid var(--accent-color);
@@ -255,6 +253,20 @@
   margin-inline-start: 5px;
 }
 
+.card__icon-button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.card__icon-button:focus {
+  outline: none;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid var(--accent-color);
+}
+
 .button__text {
   position: relative;
   z-index: 1;
@@ -262,33 +274,6 @@
   font-family: var(--accent-font), sans-serif;
   font-size: 0.875rem;
   line-height: 90%;
-}
-
-.svg__floppy {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 1;
-  mix-blend-mode: difference;
-}
-
-.floppy__icon {
-  width: 21px;
-  height: 21px;
-}
-
-.save-button {
-  /*display: grid;*/
-  /*grid-template-columns: min-content 1fr;*/
-  align-items: center;
-  width: clamp(19.125rem, 18.4866rem + 2.7238vw, 20.938rem);
-  padding-block: 15px;
-  padding-inline-start: 19px;
-  padding-inline-end: 21px;
-  border: 2px solid var(--accent-color);
-  background-color: var(--bg-color);
-  color: var(--main-button-text-color);
 }
 
 .save-button,
@@ -327,18 +312,26 @@
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
-.card__icon-button {
-  background-color: transparent;
-  border: 2px solid transparent;
-  transition: border 0.3s ease;
-}
-
-.card__icon-button:focus {
-  outline: none;
-}
-
-.card__icon-button:focus-visible {
+.save-button {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 8px;
+  align-items: center;
+  /*width: clamp(19.125rem, 18.4866rem + 2.7238vw, 20.938rem);*/
+  padding-block: 15px;
+  padding-inline-start: 19px;
+  padding-inline-end: 21px;
   border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
+  color: var(--main-button-text-color);
+}
+
+.save-button__icon {
+  width: 21px;
+  height: 21px;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: difference;
 }
 
 .core,
@@ -443,15 +436,6 @@
   color: var(--accent-color);
 }
 
-.dialog .svg__floppy {
-  mix-blend-mode: normal;
-  width: 39px;
-  height: 39px;
-  display: inline-block;
-  margin-right: 30px;
-  align-self: center;
-}
-
 dialog[popover]:popover-open {
   display: flex;
   flex-wrap: wrap;
@@ -470,11 +454,17 @@ dialog[popover]:popover-open {
 .dialog__wrapper {
   display: grid;
   grid-template-columns: min-content 1fr;
+  gap: 20px;
 }
 
 .dialog-button {
   text-transform: uppercase;
   width: 100%;
+}
+
+.dialog__icon {
+  width: 39px;
+  height: 39px;
 }
 
 #myPopover::backdrop {
