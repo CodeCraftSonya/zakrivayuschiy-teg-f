@@ -183,23 +183,26 @@
   transform: scaleX(1);
 }
 
+.main__card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
 .main__card-list-item {
   background-color: var(--bg-color);
 }
 .card__heading {
   padding-inline: 0.625rem;
-  padding-block: 0.3rem;
+  padding-block: 3px;
   border-block-end: 2px solid var(--accent-color);
+  line-height: clamp(1.375rem, 1.3088rem + 0.2824vw, 1.563rem);
 }
 
 .card__content {
   display: flex;
   justify-content: end;
   border-block-start: 2px solid var(--accent-color);
-}
-
-.card__content-paragraph {
-  line-height: 117%;
 }
 
 .card__image-wrapper {
@@ -248,6 +251,10 @@
   color: var(--main-button-text-color);
 }
 
+.card__like-button {
+  margin-inline-start: 5px;
+}
+
 .button__text {
   position: relative;
   z-index: 1;
@@ -258,21 +265,27 @@
 }
 
 .svg__floppy {
-  /*width: calc(*/
-  /*  3.0629999999999997rem - clamp(1.313rem, 1.1591rem + 0.6565vw, 1.75rem)*/
-  /*);*/
-  width: 21px;
-  height: 21px;
+  display: block;
+  width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
 }
 
+.floppy__icon {
+  width: 21px;
+  height: 21px;
+}
+
 .save-button {
-  display: inline-block;
+  /*display: grid;*/
+  /*grid-template-columns: min-content 1fr;*/
+  align-items: center;
   width: clamp(19.125rem, 18.4866rem + 2.7238vw, 20.938rem);
   padding-block: 15px;
   padding-inline-start: 19px;
+  padding-inline-end: 21px;
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
   color: var(--main-button-text-color);
@@ -356,6 +369,10 @@
 
 .heart:active .main-body {
   fill: var(--heart-fill-color);
+}
+
+.like-icon {
+  display: block;
 }
 
 .like-icon.is-liked .core {
@@ -465,4 +482,8 @@ dialog[popover]:popover-open {
 }
 
 @media (width <= 375px) {
+  .card__heading {
+    padding-block-start: 3.5px;
+    padding-block-end: 5.5px;
+  }
 }
