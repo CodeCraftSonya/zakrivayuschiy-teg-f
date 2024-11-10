@@ -35,8 +35,8 @@
   :root {
     --bg-color: #000;
     --accent-color: #00cc14;
-    --card-title-weight: 465;
-    --card-weight: 785;
+    --card-title-weight: 785;
+    --card-weight: 465;
     --background-primary: #007f0c;
     --background-secondary: #004306;
     --stripe-color: #000;
