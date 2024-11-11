@@ -237,6 +237,9 @@
   border: 2px solid var(--accent-color);
   background-color: transparent;
   color: var(--main-button-text-color);
+  position: relative;
+  transition: box-shadow 0.3s;
+  cursor: pointer;
 }
 
 .card__like-button {
@@ -265,12 +268,6 @@
   font-family: var(--accent-font), sans-serif;
   font-size: 0.875rem;
   line-height: 90%;
-}
-
-.button {
-  position: relative;
-  transition: box-shadow 0.3s;
-  cursor: pointer;
 }
 
 .button::after {
@@ -415,15 +412,12 @@ dialog[popover]:popover-open {
 .dialog-button {
   text-transform: uppercase;
   inline-size: 100%;
+  block-size: 2.375rem;
 }
 
 .dialog__icon {
   inline-size: 39px;
   block-size: 39px;
-}
-
-.dialog-button {
-  block-size: 2.375rem;
 }
 
 #myPopover::backdrop {
