@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Закрывающий тег</title>
     <meta name="color-scheme" content="light dark">
-    <link rel="icon" href="./images/favicon.ico" sizes="any"/>
-    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/animations.css">
+    <link rel="stylesheet" href="./styles/themes.css">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__logo">&lt;/HTML&gt;</h1>
-      <h2 class="header__title">закрывающий тег</h2>
+      <a class="header__logo">&lt;/HTML&gt;</a>
+      <h1 class="header__title">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -47,19 +47,17 @@
       </nav>
     </header>
     <main class="main">
-      <ul class="main__card-list">
-        <li class="main__card-list-item">
             <article class="card">
               <h3 class="card__heading">
                 Фритрек и нулевой спринт: Подготовка к работе
               </h3>
-              <div class="card__image-wrapper">
-                <p class="card__label">&lt;сurious&gt;</p>
+              <figure class="card__image-wrapper">
+                <figcaption class="card__label">&lt;сurious&gt;</figcaption>
                 <picture>
-                  <source srcset="./images/road.avif" type="image/avif" />
-                  <img class="card__image saturate-brightness-filter" alt="Дорога" src="./images/road.jpg" />
+                  <source srcset="./images/road.avif" type="image/avif">
+                  <img class="card__image saturate-brightness-filter" alt="Дорога" src="./images/road.jpg" loading="lazy">
                 </picture>
-              </div>
+              </figure>
               <div class="card__content">
                 <div class="card__content-text">
                   <p class="card__content-paragraph">
@@ -69,7 +67,7 @@
                     Дорога символизирует начало длинного и увлекательного пути. Это был первый шаг на долгом пути, полном новых открытий. Я стояла на пороге нового мира, полного возможностей и вызовов. Мне предстояло научиться многому и понять, как новые знания изменят мою жизнь.
                   </p>
                 </div>
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                   <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                     <g class="heart">
                       <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -81,21 +79,19 @@
                     <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <span class="button__text">Like</span>
+                <button class="card__like-button button" type="button" aria-label="Поставить лайк">
+                  <span class="button__text" >Like</span>
                 </button>
               </div>
             </article>
-        </li>
-        <li class="main__card-list-item">
           <article class="card">
             <h3 class="card__heading">
               1 спринт: Я — чистый лист
             </h3>
-            <div class="card__image-wrapper">
-              <p class="card__label">&lt;anxiously&gt;</p>
-              <img class="card__image cut-inline-start" alt="Разметка html" src="./images/html.png">
-            </div>
+            <figure class="card__image-wrapper">
+              <figcaption class="card__label">&lt;anxiously&gt;</figcaption>
+              <img class="card__image cut-inline-start" alt="Разметка html" src="./images/html.png" loading="lazy">
+            </figure>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__content-paragraph">
@@ -105,7 +101,7 @@
                   Я поняла, что первый шаг — самый сложный, но он и самый важный. Работа над первыми задачами показала: даже небольшой прогресс может развеять сомнения и вселить уверенность. Пусть это только начало, но именно здесь формируется понимание того, что обучение возможно и мне по силам.
                 </p>
               </div>
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -117,24 +113,22 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button button" type="button" aria-label="Поставить лайк">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </article>
-        </li>
-        <li class="main__card-list-item">
           <article class="card">
             <h3 class="card__heading">
               1 спринт: А если не получится?
             </h3>
-            <div class="card__image-wrapper">
-              <p class="card__label">&lt;inspiration&gt;</p>
+            <figure class="card__image-wrapper">
+              <figcaption class="card__label">&lt;inspiration&gt;</figcaption>
               <picture>
-                <source srcset="./images/snow-peak.avif" type="image/avif" />
-                <img class="card__image cut-inline-start opacity-filter" alt="Девушка на вершине горы" src="./images/snow-peak.jpg" />
+                <source srcset="./images/snow-peak.avif" type="image/avif">
+                <img class="card__image cut-inline-start opacity-filter" alt="Девушка на вершине горы" src="./images/snow-peak.jpg" loading="lazy">
               </picture>
-            </div>
+            </figure>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__content-paragraph">
@@ -144,7 +138,7 @@
                   Первый проект завершен, и это как достижение первой вершины: радость успеха, но и понимание, что это только начало большого пути.
                 </p>
               </div>
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -156,24 +150,22 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button button" type="button" aria-label="Поставить лайк">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </article>
-        </li>
-        <li class="main__card-list-item">
           <article class="card">
             <h3 class="card__heading">
               2 спринт: Погоня за идеалом
             </h3>
-            <div class="card__image-wrapper">
-              <p class="card__label">&lt;overcoming&gt;</p>
+            <figure class="card__image-wrapper">
+              <figcaption class="card__label">&lt;overcoming&gt;</figcaption>
               <picture>
-                <source srcset="./images/man-running.avif" type="image/avif" />
-                <img class="card__image grayscale-filter" alt="Бегун" src="./images/man-running.jpg" />
+                <source srcset="./images/man-running.avif" type="image/avif">
+                <img class="card__image grayscale-filter" alt="Бегун" src="./images/man-running.jpg" loading="lazy">
               </picture>
-            </div>
+            </figure>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__content-paragraph">
@@ -183,7 +175,7 @@
                   С каждым шагом все больше понимаешь, сколько еще предстоит пройти. Погоня за идеалом началась, но осознание, что нужно просто двигаться вперед, помогает сохранять баланс.
                 </p>
               </div>
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -195,24 +187,22 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button button" type="button" aria-label="Поставить лайк">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </article>
-        </li>
-        <li class="main__card-list-item">
           <article class="card">
             <h3 class="card__heading">
               2 спринт: О тех, кто рядом
             </h3>
-            <div class="card__image-wrapper">
-              <p class="card__label">&lt;care&gt;</p>
+            <figure class="card__image-wrapper">
+              <figcaption class="card__label">&lt;care&gt;</figcaption>
               <picture>
-                <source srcset="./images/hands-together.avif" type="image/avif" />
-                <img class="card__image contrast-filter" alt="Круг из рук, сложенных друг на друга" src="./images/hands-together.jpg" />
+                <source srcset="./images/hands-together.avif" type="image/avif">
+                <img class="card__image contrast-filter" alt="Круг из рук, сложенных друг на друга" src="./images/hands-together.jpg" loading="lazy">
               </picture>
-            </div>
+            </figure>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__content-paragraph">
@@ -222,7 +212,7 @@
                   Когда сложности начинали перевешивать, было легко вспомнить: я не одна. Одногруппники, поддержка команды и близкие — все они помогали двигаться вперед.
                 </p>
               </div>
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -234,24 +224,22 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button button" type="button" aria-label="Поставить лайк">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </article>
-        </li>
-        <li class="main__card-list-item">
           <article class="card">
             <h3 class="card__heading">
               3 спринт: Обходные стратегии
             </h3>
-            <div class="card__image-wrapper">
-              <p class="card__label">&lt;difficulty&gt;</p>
+            <figure class="card__image-wrapper">
+              <figcaption class="card__label">&lt;difficulty&gt;</figcaption>
               <picture>
-                <source srcset="./images/magnifying-glass.webp" type="image/webp" />
-                <img class="card__image cut-inline-end brightness-filter" alt="Лупа" src="./images/magnifying-glass.jpg" />
+                <source srcset="./images/magnifying-glass.webp" type="image/webp">
+                <img class="card__image cut-inline-end brightness-filter" alt="Лупа" src="./images/magnifying-glass.jpg" loading="lazy">
               </picture>
-            </div>
+            </figure>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__content-paragraph">
@@ -261,7 +249,7 @@
                   В какой-то момент решения как будто исчезли, но когда начала искать другой подход, стало ясно: ответы были рядом, только скрыты от первого взгляда.
                 </p>
               </div>
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -273,24 +261,22 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button button" type="button" aria-label="Поставить лайк">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </article>
-        </li>
-        <li class="main__card-list-item">
           <article class="card">
             <h3 class="card__heading">
               3 спринт: Когда опускаются руки
             </h3>
-            <div class="card__image-wrapper">
-              <p class="card__label">&lt;break&gt;</p>
+            <figure class="card__image-wrapper">
+              <figcaption class="card__label">&lt;break&gt;</figcaption>
               <picture>
-                <source srcset="./images/coffee-break.avif" type="image/avif" />
-                <img class="card__image sepia-filter" alt="Перерыв на кофе" src="./images/coffee-break.jpg" />
+                <source srcset="./images/coffee-break.avif" type="image/avif">
+                <img class="card__image sepia-filter" alt="Перерыв на кофе" src="./images/coffee-break.jpg" loading="lazy">
               </picture>
-            </div>
+            </figure>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__content-paragraph">
@@ -300,7 +286,7 @@
                   Организация — ключ к выживанию на курсе. Простое планирование и пару минут на размышление о целях возвращали фокус, даже когда задач было через край.
                 </p>
               </div>
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -312,24 +298,22 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button button" type="button" aria-label="Поставить лайк">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </article>
-        </li>
-        <li class="main__card-list-item">
           <article class="card">
             <h3 class="card__heading">
               «Сейчас я здесь»
             </h3>
-            <div class="card__image-wrapper">
-              <p class="card__label">&lt;trust the process&gt;</p>
+            <figure class="card__image-wrapper">
+              <figcaption class="card__label">&lt;trust the process&gt;</figcaption>
               <picture>
-                <source srcset="./images/morning.avif" type="image/avif" />
-                <img class="card__image saturate-filter" alt="Утренний рассвет" src="./images/morning.jpg" />
+                <source srcset="./images/morning.avif" type="image/avif">
+                <img class="card__image saturate-filter" alt="Утренний рассвет" src="./images/morning.jpg" loading="lazy">
               </picture>
-            </div>
+            </figure>
             <div class="card__content">
               <div class="card__content-text">
                 <p class="card__content-paragraph">
@@ -339,7 +323,7 @@
                   Каждое утро приносит новые возможности, чтобы углубить знания и открыть для себя больше. Понимаю, что путь не легкий, но именно он имеет смысл.
                 </p>
               </div>
-              <button class="card__icon-button">
+              <button class="card__icon-button" type="button" aria-label="Поставить лайк">
                 <svg width="39" height="34" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="like-icon">
                   <g class="heart">
                     <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z" fill="var(--heart-contour-color)"/>
@@ -351,16 +335,14 @@
                   <path class="sparks" d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--heart-fill-color)"/>
                 </svg>
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button button" type="button" aria-label="Поставить лайк">
                 <span class="button__text">Like</span>
               </button>
             </div>
           </article>
-        </li>
-      </ul>
-      <button class="save-button" popovertarget="myPopover" popovertargetaction="show">
+      <button class="save-button button" popovertarget="myPopover" popovertargetaction="show" type="button">
         <svg viewBox="0 0 21 21" class="save-button__icon">
-          <use href="./svg/floppy.svg/#floppy_svg"></use>
+          <use href="./svg/floppy.svg#floppy_svg"></use>
         </svg>
         <span class="button__text" >Сохранить на память</span>
       </button>
@@ -368,12 +350,12 @@
     <dialog class="dialog" id="myPopover" popover>
         <div class="dialog__wrapper">
           <svg viewBox="0 0 21 21" class="dialog__icon">
-            <use href="./svg/floppy.svg/#floppy_svg"></use>
+            <use href="./svg/floppy.svg#floppy_svg"></use>
           </svg>
           <p class="dialog__text">Вставьте
             дискету, чтобы продолжить</p>
         </div>
-        <button class="dialog-button" id="closeButton" popovertarget="myPopover" popovertargetaction="hide">
+        <button class="dialog-button button" id="closeButton" popovertarget="myPopover" popovertargetaction="hide" type="button">
           <span class="button__text" aria-hidden="true">ok</span>
           <span class="visually-hidden">Закрыть</span>
         </button>
