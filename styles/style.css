@@ -14,10 +14,6 @@
 
 */
 
-p {
-  line-height: 117%;
-}
-
 .page {
   display: flex;
   flex-direction: column;
@@ -188,6 +184,10 @@ p {
   gap: 27px;
   inline-size: 100%;
   padding-block-end: 25px;
+}
+
+.card__content-paragraph {
+  line-height: 117%;
 }
 
 .card__image-wrapper {
