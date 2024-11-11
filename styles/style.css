@@ -175,7 +175,7 @@
   justify-content: end;
   border-block-start: 2px solid var(--accent-color);
   flex-wrap: wrap;
-  padding: 25px;
+  padding: 27px 25px 25px 25px;
 }
 
 .card__content-text {
@@ -187,7 +187,7 @@
 }
 
 .card__content-paragraph {
-  line-height: 117%;
+  line-height: 114%;
 }
 
 .card__image-wrapper {
