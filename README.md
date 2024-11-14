@@ -1,1 +1,1 @@
-https://github.com/SonyaProjects/zakrivayuschiy-teg-f.git
+https://github.com/CodeCraftSonya/zakrivayuschiy-teg-f.git
